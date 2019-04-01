@@ -1,5 +1,5 @@
 import test from 'ava';
-import parser from '../parser/parser';
+import parser from '../src/parser/parser';
 
 test.beforeEach(t => {
 	t.context.p = new parser()
