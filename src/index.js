@@ -68,4 +68,4 @@ if(!path) {
 }
 
 //just a file?
-path.endsWith('.sol') ? FindBugs(nodepath.join(process.cwd(), path)) : InFiles(path)
+path.endsWith('.sol') ? FindBugs(nodepath.resolve(process.cwd(), path)) : InFiles(path)
