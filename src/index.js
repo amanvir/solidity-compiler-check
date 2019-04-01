@@ -16,7 +16,6 @@ const InFiles = (path) => {
 }
 
 const FindBugs = (fileName) => {
-    console.log(`\n\nFile name: ${fileName}`)
     const fileContent = fs.readFileSync(fileName, "utf8")
     const p = new parser()
     const parsed = p.parse(fileContent)
@@ -24,6 +23,8 @@ const FindBugs = (fileName) => {
 
     //remove the ^ if it exists 
     const version = extractedVersion.replace('^', '')
+
+    console.log(`\n\nFile name: ${fileName}, Version: ${version}`)
 
     if(!bugsbyVersion[version]) {
         //todo: automatically update databases 
