@@ -1,16 +1,16 @@
-# sol-compiler-check 
+# solidity-compiler-check 
 
 Checks for known issues with the solidity compiler
 
 ## Install 
 
 ```
-npm i -g sol-compiler-check
+npm i -g solidity-compiler-check
 ```
 
 ## Usage 
 ```
-sol-compiler-check [filename.sol || file path]
+solidity-compiler-check [filename.sol || file path]
 ```
 
 Example output: 

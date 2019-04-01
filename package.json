@@ -1,8 +1,10 @@
 {
-  "name": "sol-compiler-check",
+  "name": "solidity-compiler-check",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "preferGlobal": true, 
+  "bin": { "solidity-compiler-check": "dist/index.js"},
   "scripts": {
     "test": "ava tests/",
     "build": "babel src -d dist && cp -r src/data dist/",

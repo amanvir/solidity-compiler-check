@@ -60,7 +60,7 @@ const path = process.argv[2]
 
 if(!path) {
     console.log(`
-        Usage: sol-compiler-check [filename.sol || file path]
+        Usage: solidity-compiler-check [filename.sol || file path]
     `)
 
     process.exit()
