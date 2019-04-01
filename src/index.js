@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import glob from 'glob'
 import fs from 'fs'
 import nodepath from 'path'
